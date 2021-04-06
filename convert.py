@@ -1,13 +1,24 @@
-!
+#!/usr/bin/env python
+
+"""
+Script used to convert a bunch of SVG files to PNG
+"""
+
 from os import walk, mkdir
 import pyvips
 
 # sudo apt-get install libvips
 # pip install pyvips
 
-# shapes = ["circle", "naked", "square"]
-# colors = ["blue", "gray", "green", "red"]
 PATH = "svg/"
+
+
+def main():
+
+    """
+    All the action
+    """
+
 
 for (root, dirs, files) in walk(PATH):
     for f in files:
