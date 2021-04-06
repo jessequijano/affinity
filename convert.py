@@ -29,3 +29,6 @@ for (root, dirs, files) in walk(PATH):
                 pass
             convert_file = pyvips.Image.thumbnail(f"{root}/{f}", 52, height=52)
             convert_file.write_to_file(f"{root}/png/{f.replace('svg', 'png')}")
+
+if __name__ == "__main__":
+    main()
