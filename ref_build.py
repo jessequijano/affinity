@@ -23,6 +23,7 @@ with open("reference.md", "w") as my_file:
         for f in files:
             if "green.png" in f:
                 my_file.write(f"  - [{f}](#{f.replace('.', '')})\n")
+    for (root, dirs, files) in walk(PATH):
         for f in files:
             if "green.png" in f:
                 my_file.write(f"\n## {f}\n")
