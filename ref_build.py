@@ -18,7 +18,11 @@ def main():
 with open("reference.md", "w") as my_file:
     my_file.write("# Reference for Icons")
     my_file.write("\n")
+    my_file.write("- [Reference for Icons](#reference-for-icons)\n")
     for (root, dirs, files) in walk(PATH):
+        for f in files:
+            if "green.png" in f:
+                my_file.write(f"  - [{f}](#{f.replace('.', '')})\n")
         for f in files:
             if "green.png" in f:
                 my_file.write(f"\n## {f}\n")
