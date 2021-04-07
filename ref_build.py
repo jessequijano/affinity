@@ -15,6 +15,7 @@ def main():
     All the action
     """
 
+
 with open("reference.md", "w") as my_file:
     my_file.write("# Reference for Icons")
     my_file.write("\n")
@@ -29,5 +30,5 @@ with open("reference.md", "w") as my_file:
                 my_file.write(f"\n## {f}\n")
                 my_file.write(f"\n![{f}]({root}/{f})\n")
 
-    if __name__ == "__main__":
-        main()
+if __name__ == "__main__":
+    main()
