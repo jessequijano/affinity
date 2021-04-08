@@ -15,6 +15,7 @@ def main():
     All the action
     """
 
+
 with open("reference.md", "w") as my_file:
     my_file.write("# Reference for Icons\n")
     my_file.write("\n")
@@ -25,7 +26,6 @@ with open("reference.md", "w") as my_file:
         for f in files:
             if ".png" in f:
                 count += 1
-                print(count)
                 if count % 3 == 0:
                     my_file.write("|\n")
                     count = 0
@@ -36,4 +36,3 @@ with open("reference.md", "w") as my_file:
 
 if __name__ == "__main__":
     main()
-
