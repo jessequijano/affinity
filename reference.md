@@ -1,7 +1,7 @@
 # Reference for Icons
 
 |Name|Icon|Name|Icon|Name|Icon|
-|:-------------:|:---|:-----------:|:----|:-----------:|:---|
+|:---|:---|:---|:---|:---|:---|
 |c_storage.png|![c_storage.png](svg/circle/gray/png/c_storage.png)|c_camera_dome.png|![c_camera_dome.png](svg/circle/gray/png/c_camera_dome.png)|c_phone_old.png|![c_phone_old.png](svg/circle/gray/png/c_phone_old.png)|
 |c_office.png|![c_office.png](svg/circle/gray/png/c_office.png)|c_printer.png|![c_printer.png](svg/circle/gray/png/c_printer.png)|c_router.png|![c_router.png](svg/circle/gray/png/c_router.png)|
 |c_phone_cloud.png|![c_phone_cloud.png](svg/circle/gray/png/c_phone_cloud.png)|c_server-cluster.png|![c_server-cluster.png](svg/circle/gray/png/c_server-cluster.png)|c_grid.png|![c_grid.png](svg/circle/gray/png/c_grid.png)|
