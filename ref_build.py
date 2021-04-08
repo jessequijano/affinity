@@ -20,13 +20,12 @@ with open("reference.md", "w") as my_file:
     my_file.write("# Reference for Icons\n")
     my_file.write("\n")
     my_file.write("|Name|Icon|Name|Icon|Name|Icon|\n")
-    my_file.write("|:-------------:|:----------:|:-----------:|:-----------:|:-----------:|:-----------:|\n")
+    my_file.write("|:-------------:|:----------|:-----------:|:-----------|:-----------:|:-----------|\n")
     for (root, dirs, files) in walk(PATH):
         count = 0
         for f in files:
             if ".png" in f:
                 count += 1
-                print(count)
                 if count == 1:
                     my_file.write(f"|{f}|![{f}]({root}/{f})|")
                 if count == 2:
