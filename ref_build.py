@@ -27,11 +27,11 @@ with open("reference.md", "w") as my_file:
             if ".png" in f:
                 count += 1
                 if count == 1:
-                    my_file.write(f"|{f}|![{f}]({root}/{f})|")
+                    my_file.write(f"|{f.replace('.png', '')}|![{f}]({root}/{f})|")
                 if count == 2:
-                    my_file.write(f"{f}|![{f}]({root}/{f})|")
+                    my_file.write(f"{f.replace('.png', '')}|![{f}]({root}/{f})|")
                 if count == 3:
-                    my_file.write(f"{f}|![{f}]({root}/{f})|\n")
+                    my_file.write(f"{f.replace('.png', '')}|![{f}]({root}/{f})|\n")
                     count = 0
     my_file.write("|\n")
 
