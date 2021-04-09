@@ -176,4 +176,4 @@
 |sq_loadbalancer_red|![sq_loadbalancer_red.png](svg/square/red/png/sq_loadbalancer_red.png)|sq_servercluster_red|![sq_servercluster_red.png](svg/square/red/png/sq_servercluster_red.png)|sq_vrf_red|![sq_vrf_red.png](svg/square/red/png/sq_vrf_red.png)|
 |sq_switch_multilayer_red|![sq_switch_multilayer_red.png](svg/square/red/png/sq_switch_multilayer_red.png)|sq_camera_red|![sq_camera_red.png](svg/square/red/png/sq_camera_red.png)|sq_interconnect_red|![sq_interconnect_red.png](svg/square/red/png/sq_interconnect_red.png)|
 |sq_conversation_red|![sq_conversation_red.png](svg/square/red/png/sq_conversation_red.png)|sq_printer_red|![sq_printer_red.png](svg/square/red/png/sq_printer_red.png)|sq_router_cloud_red|![sq_router_cloud_red.png](svg/square/red/png/sq_router_cloud_red.png)|
-|sq_cloud_red|![sq_cloud_red.png](svg/square/red/png/sq_cloud_red.png)||
+|sq_cloud_red|![sq_cloud_red.png](svg/square/red/png/sq_cloud_red.png)|

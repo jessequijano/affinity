@@ -17,14 +17,18 @@ def main():
 
 
 with open("reference.md", "w") as my_file:
+    # Headers and settings alignments for file
     my_file.write("# Reference for Icons\n")
     my_file.write("\n")
     my_file.write("|Name|Icon|Name|Icon|Name|Icon|\n")
     my_file.write("|:---:|:---:|:---:|:---:|:---:|:---:|\n")
     for (root, dirs, files) in walk(PATH):
         count = 0
+        # Iterating over all files with .png extension
         for f in files:
             if ".png" in f:
+                # Simple math checks on matches and reset
+                # counter on third entry
                 count += 1
                 if count == 1:
                     my_file.write(f"|{f.replace('.png', '')}|![{f}]({root}/{f})|")
@@ -33,7 +37,7 @@ with open("reference.md", "w") as my_file:
                 if count == 3:
                     my_file.write(f"{f.replace('.png', '')}|![{f}]({root}/{f})|\n")
                     count = 0
-    my_file.write("|\n")
+    my_file.write("\n")
 
 if __name__ == "__main__":
     main()
