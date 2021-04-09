@@ -20,7 +20,7 @@ with open("reference.md", "w") as my_file:
     # Headers and settings alignments for file
     my_file.write("# Reference for Icons\n")
     my_file.write("\n")
-    my_file.write("|Name|Icon|Name|Icon|Name|Icon|\n")
+    my_file.write("|Icon|Name|Icon|Name|Icon|Name|\n")
     my_file.write("|:---:|:---:|:---:|:---:|:---:|:---:|\n")
     for (root, dirs, files) in walk(PATH):
         count = 0
@@ -31,11 +31,11 @@ with open("reference.md", "w") as my_file:
                 # counter on third entry
                 count += 1
                 if count == 1:
-                    my_file.write(f"|{f.replace('.png', '')}|![{f}]({root}/{f})|")
+                    my_file.write(f"|![{f}]({root}/{f})|{f.replace('.png', '')}|")
                 if count == 2:
-                    my_file.write(f"{f.replace('.png', '')}|![{f}]({root}/{f})|")
+                    my_file.write(f"![{f}]({root}/{f})|{f.replace('.png', '')}|")
                 if count == 3:
-                    my_file.write(f"{f.replace('.png', '')}|![{f}]({root}/{f})|\n")
+                    my_file.write(f"![{f}]({root}/{f})|{f.replace('.png', '')}|\n")
                     count = 0
     my_file.write("\n")
 
